@@ -1,31 +1,19 @@
-﻿// Invert values.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Grasshopper - Messi goals function.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#include <vector>
 
 
-std::vector<int> invert(std::vector<int> values);
+int goals();
 
 int main()
 {
-	std::vector <int> vec = { 1 , 23 , 100 ,-2 , 0 };
-	std::vector <int> revVec;
-	revVec.reserve(5);
-	revVec = invert(vec);
-	for (int i = 0; i < revVec.size(); i++)
-	{
-		std::cout << revVec[i] << " ";
-	}
+    std::cout << "Hello World!\n";
 }
 
 
-
-std::vector<int> invert(std::vector<int> values)
-{
-	for (int i = 0; i < values.size();i++)
-		values[i] = values[i] - (values[i] * 2);
-	return values;
+int goals(int laLigaGoals, int copaDelReyGoals, int championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
