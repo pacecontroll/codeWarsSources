@@ -1,32 +1,33 @@
-﻿// Invert values.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Equals without  ==.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#include <vector>
 
+bool equals(int a, int b);
 
-std::vector<int> invert(std::vector<int> values);
 
 int main()
 {
-	std::vector <int> vec = { 1 , 23 , 100 ,-2 , 0 };
-	std::vector <int> revVec;
-	revVec.reserve(5);
-	revVec = invert(vec);
-	for (int i = 0; i < revVec.size(); i++)
-	{
-		std::cout << revVec[i] << " ";
-	}
+    std::cout << "Hello World!\n";
+}
+
+
+bool equals(int a, int b) {
+    return a - b ? false : true;
 }
 
 
 
-std::vector<int> invert(std::vector<int> values)
-{
-	for (int i = 0; i < values.size();i++)
-		values[i] = values[i] - (values[i] * 2);
-	return values;
+/*
+
+Как вариант
+
+bool equals(int a, int b){
+  return !(a - b);
 }
+
+*/
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
