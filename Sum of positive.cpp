@@ -2,11 +2,24 @@
 //
 
 #include <iostream>
+#include <vector>
+
+
 
 int main()
 {
     std::cout << "Hello World!\n";
 }
+
+
+int positive_sum(const std::vector<int> arr) {
+    // Your code here
+    int sum = 0;
+    for (int i = 0; i < arr.size();i++)
+        sum += arr[i] > 0 ? arr[i] : 0;
+    return sum;
+}
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
