@@ -1,49 +1,12 @@
-﻿// xor.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Sum of positive.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-using namespace std;
-
-bool xorf(bool a, bool b);
-
 
 int main()
 {
-    cout << xorf(false, false) << endl;
-    cout << xorf(false, true) << endl;
-    cout << xorf(true, false) << endl;
-    cout << xorf(true, true) << endl;
+    std::cout << "Hello World!\n";
 }
-
-
-
-bool xorf(bool a, bool b)
-{
-    return (a + b == 1) ? true : false;
-}
-
-
-//но как оказывается, если думать головой можно додуматься до самых простых решений
-/*
-bool xorf(bool a, bool b)
-{
-    return a^b;
-}
-
-или
-
-bool xorf(bool a, bool b){
-    return a != b;
-}
-
-ну или
-
-bool xorf(bool a, bool b)
-{
-    return a == b? false : true;
-}
-
-*/
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
